@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.about-me, .portfolio {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.about-me .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.about-me div {
+    background-color: #e1e1e1;
+    padding: 10px;
+    flex: 1 0 45%; /* Allows two columns */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.portfolio .projects {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.project {
+    background-color: #e1e1e1;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1; /* Allows uniform sizing */
+}
+
+.image {
+    background-color: #ccc; /* Placeholder for images */
+    margin-bottom: 5px;
+}
+
+.projects .project {
+    display: block; /* Apply block so the anchor takes the full width */
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Keep text color the same as parent */
+}
