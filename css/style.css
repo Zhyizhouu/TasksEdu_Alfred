@@ -29,7 +29,7 @@ header .text-content {
 }
 
 header h1:hover {
-    color: #007BFF; /* Change color on hover */
+    color: hwb(210 25% 71%); /* Change color on hover */
     transform: scale(1.1); /* Slight zoom effect */
 }
 
@@ -55,7 +55,7 @@ section h2 {
 }
 
 section h2:hover {
-    color: #007BFF; /* Change color on hover */
+    color: hwb(210 25% 71%); /* Change color on hover */
     transform: scale(1.1); /* Slight zoom effect */
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
@@ -134,6 +134,7 @@ section h2:hover {
     font-size: 16px;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
     cursor: pointer; /* Pointer cursor for interactivity */
+    overflow: hidden; /* Prevent content overflow */
 }
 
 .portfolio .projects .project:hover {
@@ -155,7 +156,9 @@ section h2:hover {
 }
 
 .portfolio .projects .project p {
-    margin: 0;
+    margin-top: 15px; /* Add spacing between the image and text */
     font-size: 14px;
     color: #333;
+    z-index: 1; /* Ensure text stays above the image */
+    position: relative; /* Prevent overlap issues */
 }
