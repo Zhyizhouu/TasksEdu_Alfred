@@ -10,6 +10,27 @@ header {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between text and image */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 20px; /* Add spacing between text and image */
+}
+
+header .text-content {
+    flex: 1; /* Allow text to take up remaining space */
+    text-align: left; /* Align text to the left */
+}
+
+header h1:hover {
+    color: #007BFF; /* Change color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
 }
 
 .about-me, .portfolio {
@@ -21,6 +42,22 @@ header {
 
 h1, h2 {
     color: #333;
+}
+
+/* Interactive effect for "About Me" and "Portofolio" */
+section h2 {
+    font-family: 'Courier New', Courier, monospace; /* Unique font */
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth animation */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+section h2:hover {
+    color: #007BFF; /* Change color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
 .about-me .info {
@@ -35,6 +72,31 @@ h1, h2 {
     flex: 1 0 45%; /* Allows two columns */
     border-radius: 5px;
     text-align: center;
+}
+
+.about-me .info div {
+    background-color: #e1e1e1;
+    padding: 10px;
+    flex: 1 0 45%; /* Allows two columns */
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; /* Unique font */
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth animation */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.about-me .info div:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    background-color: #d4d4d4; /* Change background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.about-me .info div strong {
+    font-size: 18px;
+    color: #333; /* Make the labels stand out */
+    display: block;
+    margin-bottom: 5px;
 }
 
 .portfolio .projects {
@@ -60,4 +122,40 @@ h1, h2 {
     display: block; /* Apply block so the anchor takes the full width */
     text-decoration: none; /* Remove underline from links */
     color: inherit; /* Keep text color the same as parent */
+}
+
+.portfolio .projects .project {
+    background-color: #e1e1e1;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1; /* Allows uniform sizing */
+    font-family: 'Courier New', Courier, monospace; /* Unique font */
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.portfolio .projects .project:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    background-color: #d4d4d4; /* Change background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.portfolio .projects .project .image {
+    background-color: #ccc; /* Placeholder for images */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden; /* Ensure content stays within bounds */
+    transition: transform 0.3s ease; /* Smooth animation for image */
+}
+
+.portfolio .projects .project:hover .image {
+    transform: scale(1.1); /* Slight zoom effect for the image */
+}
+
+.portfolio .projects .project p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
 }
