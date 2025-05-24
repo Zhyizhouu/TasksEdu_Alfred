@@ -1,53 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portofolio</title>
-</head>
-<body>
-    <header>
-        <div class="text-content">
-            <h2>Alfred Abner</h2>
-            <h3>Welcome to Alfred's Simple Portofolio</h3>
-            <p>I'm someone who's life is dedicated to improving and exploring things further, one step at a time.</p>
-        </div>
-        <img src="img/profil.png" alt="Profile Picture">
-    </header>
-
-    <section class="about-me">
-        <h2>About Me</h2>
-        <div class="info">
-            <div><strong>Full Name:</strong>Alfred Abner</div>
-            <div><strong>Education:</strong>SMA Cinta Kasih Tzu Chi</div>
-            <div><strong>Email:</strong>itzalfree07@gmail.com</div>
-            <div><strong>Status:</strong>Student</div>
-        </div>
-    </section>
-
-    <section class="portfolio">
-        <h2>Portofolio</h2>
-        <div class="projects" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-            <a href="#" class="project" style="text-align: center;">
-                <div class="image" style="height: 200px; width: 350px; margin: 0 auto;">
-                    <img src="img/projek1.jpg" alt="Proyek 1" style="height: 100%; width: 100%; object-fit: cover;">
-                </div>
-                <p><b>Web Portofolio NaKer Inspiratif - 2024Q1</b><br><br>Mentransformasi kisah inspiratif dari <b>Guru guru</b> dan <b>Officeboy serta Officegirl</b> hebat di <b>SMA Cinta Kasih Tzu Chi</b> menjadi sebuah <b>Website Portofolio Interaktif</b> mereka yang telah kami wawancara.</p>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Alfred - Portofolio</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top" id="sideNav" style="background-color: rgb(180, 169, 153);">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Alfred Abner</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profil.webp" alt="..." /></span>
             </a>
-            <a href="#" class="project" style="text-align: center;">
-                <div class="image" style="height: 200px; width: 350px; margin: 0 auto;">
-                    <img src="img/projek2.png" alt="Proyek 2" style="height: 100%; width: 100%; object-fit: cover;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Alfred
+                        <span class="text-primary"><a href="#">Abner</a></span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Indonesia, Jakarta · Student @ BINUS University · 0895325633619 ·
+                        <a href="mailto:itzalfree07@email.com">itzalfree07@email.com</a>
+                    </div>
+                    <p class="lead mb-5">Persistent is simply my middle name. Experienced in Initiating and Organizing Batch Event such as <i>Eco-Enzyme: Turn Waste into Wonders</i> has taught me lots of things, such as how to <b>Collaborate</b> at initiating an event and <b>Effective Communication</b>. <br> Whilst being Target Oriented Person, I always try to finish the responsibilities given to me, regardless.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    </div>
                 </div>
-                <p><b>AlcoBistro - 2024Q3</b><br><br>Sebuah <b>Website Reservasi Restoran</b> menggunakan <b>MySQL</b> sebagai <b>Database</b> dan <b>XAMPP</b>, di Periode ini saya juga diajarkan cara menggunakan <b>SweetAlert</b> dalam bentuk javascript. Web ini merupakan Produk untuk <b>Projek P5</b> (Kurikulum Merdeka)</p>
-            </a>
-            <a href="https://nutrilanceadmin.web.app" class="project" style="text-align: center;" target="_blank">
-                <div class="image" style="height: 200px; width: 350px; margin: 0 auto;">
-                    <img src="img/projek3.png" alt="Proyek 3" style="height: 100%; width: 100%; object-fit: cover;">
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Chairperson of the Environmental Care Commission</h3>
+                            <div class="subheading mb-3">Student Representative Council</div>
+                                <ul>
+                                    <li>Led the implementation of the event <i><b>“Eco-Enzyme: Turn Waste into Wonders”</b></i> for the entire grade level to educate students on transforming fruit peels into environmentally friendly products.</li>
+                                    <li style="padding-top: 10px;">Designed and executed the weekly “5K” program to consistently improve cleanliness across the whole grade.</li>
+                                </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2024 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Secretary of 12.3</h3>
+                            <div class="subheading mb-3">Class Secretary</div>
+                            <ul>
+                                <li>Responsible for writing summaries of the material covered in each lesson.</li>
+                                <li style="padding-top: 10px;">Managed daily attendance records and handled absence permissions for the entire class.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2024 - 2025</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Social Media Content Producer</h3>
+                            <div class="subheading mb-3">School Ambassador</div>
+                            <ul>
+                                <li>Designed YouTube videos and thumbnails for the “Alumni Inspired” program.</li>
+                                <li style="padding-top: 10px;">Created promotional videos for the school and highlight reels for the Mandarin Day event at the high school unit.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2023 - 2024</span></div>
+                    </div>
                 </div>
-                <p><b>NutriLance (Admin Side) - 2025Q1</b><br><br><b>NutriLance</b>, sebuah Klinik Konsultasi Gizi yang diadaptasikan menjadi Website Interaktif. Adanya <b><i>Admin Side</i></b> yang menggunakan <b>Google Sheets</b> sebagai <b>Database</b>, <i>Admin Side</i> ada untuk mempermudah Administrasi Karyawan. Projek ini digunakan sebagai <b>Ujian Praktek Sekolah</b>.</p>
-            </a>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">University of Colorado Boulder</h3>
+                            <div class="subheading mb-3">Bachelor of Science</div>
+                            <div>Computer Science - Web Development Track</div>
+                            <p>GPA: 3.23</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">James Buchanan High School</h3>
+                            <div class="subheading mb-3">Technology Magnet Program</div>
+                            <p>GPA: 3.56</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                    </ul>
+                    <div class="subheading mb-3">Workflow</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Mobile-First, Responsive Design
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Browser Testing & Debugging
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Functional Teams
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Agile Development & Scrum
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Google Analytics Certified Developer
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Mobile Web Specialist - Google Certification
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            2
+                            <sup>nd</sup>
+                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - James Buchanan High School - Hackathon 2006
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            3
+                            <sup>rd</sup>
+                            Place - James Buchanan High School - Hackathon 2005
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-    </section>
-</body>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
